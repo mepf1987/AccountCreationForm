@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="index.js"></script>
+    <title>Account creation form</title>
+  </head>
+  <body>
+    <div class="main container">
+        <div class="container title">
+            <h2>Create Account</h2>
+        </div>
+        <div  class="container content">
+            <form class="form" >
+                <div>
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name" class="icon" required>
+                    <span class="error" id="error-name"></span><br><br>
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" class="icon" required>
+                    <span class="error" id="error-email">sdsa</span><br><br>
+                </div>
+                <div>
+                    <label for="password">Clave:</label><br>
+                    <input type="password" id="password" name="password" class="icon" required>
+                    <span class="error" id="error-password"></span><br><br>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirme su clave:</label><br>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="icon" required>
+                    <span class="error" id="error-confirmPassword"></span><br><br>
+                </div>
+                
+                <div>
+                    <input type="submit" value="Submit" onclick="return validateForm()">
+                </div>
+
+                
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
+
